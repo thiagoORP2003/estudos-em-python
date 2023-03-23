@@ -1,0 +1,30 @@
+print("Selecione uma operação:")
+print("1 - Adição")
+print("2 - Subtração")
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+# Solicita ao usuário que escolha uma operação
+opcao = input("Digite sua opção (1/2/3/4): ")
+
+# Solicita ao usuário que insira dois números
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Executa a operação selecionada e exibe o resultado
+if opcao == '1':
+    resultado = num1 + num2
+    print(num1, "+", num2, "=", resultado)
+elif opcao == '2':
+    resultado = num1 - num2
+    print(num1, "-", num2, "=", resultado)
+elif opcao == '3':
+    resultado = num1 * num2
+    print(num1, "*", num2, "=", resultado)
+elif opcao == '4':
+    resultado = num1 / num2
+    print(num1, "/", num2, "=", resultado)
+else:
+    print("Opção inválida. Tente novamente.")
+
+
